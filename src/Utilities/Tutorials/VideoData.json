@@ -1,0 +1,89 @@
+{
+    "data":[
+        {
+            "id":1,
+            "title":"Verify your Arch Linux GUI Download",
+            "type":"INSTALLATION VIDEOS",
+            "link":"https://www.youtube.com/embed/wtZjRXOny7Q",
+            "desc":"In this video, we take a look at how to verify that you have downloaded exactly what I uploaded using the Secure Hash Algorithm (SHA). The Secure Hash Algorithms are a family of cryptographic hash functions. A cryptographic hash is like a signature for a data set. If you would like to compare two sets of raw data (source of the file, text or similar) it is always better to hash it and compare SHA256 values. "
+        },
+        {
+            "id":2,
+            "title":"ALG Automatic Installation",
+            "type":"INSTALLATION VIDEOS",
+            "link":"https://www.youtube.com/embed/0gAjgxGGzjw",
+            "desc":"In this video, we take a look at how to install Arch Linux using a GUI installer (Calamares). Also,we install Arch Linux on UEFI/GPT setup with automatic partining."
+        },
+        {
+            "id":3,
+            "title":"ALG Installation on Legacy BIOS using MBR partitioning scheme",
+            "type":"INSTALLATION VIDEOS",
+            "link":"https://www.youtube.com/embed/smdZdPLHjWc",
+            "desc":"In this video, we take a look at how to install Arch Linux, with a GUI installer, on a Legacy/MBR setup.Also, emphasis has been given on partitioning, and a whole 10 minute session is dedicated to explaining the partitioning. "
+        },
+        {
+            "id":4,
+            "title":"Dual Boot with Windows 10 Legacy/MBR",
+            "type":"MULTI-BOOT WITH OTHER OS",
+            "link":"https://www.youtube.com/embed/Ltiup47QIMU",
+            "desc":"In this video, we take a look at how to use the ALG ISOs, to dual boot Arch Linux with Windows 10 on Legacy BIOS boot mode, using the MBR (Master Boot Record) partitioning scheme."
+        },
+        {
+            "id":5,
+            "title":"Dual Boot with Windows 10 UEFI/GPT",
+            "type":"MULTI-BOOT WITH OTHER OS",
+            "link":"https://www.youtube.com/embed/zGvGkuVEx0M",
+            "desc":"In this video, we take a look at how to use the ALG ISOs, to dual boot Arch Linux with Windows 10 on UEFI BIOS boot mode, using the GPT paritioning scheme."
+        },
+        {
+            "id":6,
+            "title":"Install Software from AUR (pamac as example)",
+            "type":"ARCH LINUX SPECIFIC VIDEOS",
+            "link":"https://www.youtube.com/embed/BwvQUtv1eM0",
+            "desc":"In this video, we take a look at how to install software from the Arch User Repository (AUR). The AUR exposes the Arch Linux user to the largest software database in the entire Linux community."
+        },
+        {
+            "id":7,
+            "title":"Install Google Chrome On Arch Linux",
+            "type":"ARCH LINUX SPECIFIC VIDEOS",
+            "link":"https://www.youtube.com/embed/f2lY3k5o84w",
+            "desc":"In this video, We take a look at how to install Google's Chrome Browser from AUR."
+        },
+        {   
+            "id":8,
+            "title":"Make Bootable USB in Windows (7, 8, 10, 11)",
+            "type":"MISCALLANEOUS TOPICS",
+            "link":"https://www.youtube.com/embed/7ND2fiaFfic",
+            "desc":"In this video, we take a look at how to make a bootable USB of a Linux distribution, on Windows. In this video, as an example, I will make the Arch Linux GUI Gnome Edition."
+        },
+        {   
+            "id":9,
+            "title":"Make Bootable USB with dd on any Linux Distro",
+            "type":"MISCALLANEOUS TOPICS",
+            "link":"https://www.youtube.com/embed/KQGedNCA1E4",
+            "desc":"In this video, we take a look at how to make a bootable USB of a Linux distribution, on another Linux distribution. In this video, as an example, I will make the Manjaro bootable USB on Ubuntu."
+        },
+        {   
+            "id":10,
+            "title":"Install and Setup VirtualBox in Arch Linux",
+            "type":"MISCALLANEOUS TOPICS",
+            "link":"https://www.youtube.com/embed/m6ZeH1L2734",
+            "desc":"In this video, we take a look at how to install and setup VirtualBox in Arch Linux."
+        },
+        {   
+            "id":11,
+            "title":"How to use VirtualBox to try Arch Linux GUI or any Linux",
+            "type":"MISCALLANEOUS TOPICS",
+            "link":"https://www.youtube.com/embed/RJs70jQi7Wk",
+            "desc":"In this video, we take a look at how to use VirtualBox. I will show you how to setup a template which you can use to try out all Arch Linux, and all other Arch Linux based Distributions like Manjaro, ArcoLinux, etc."
+        },
+        {   
+            "id":12,
+            "title":"Fixing broken bootloader",
+            "type":"MISCALLANEOUS TOPICS",
+            "link":"https://www.youtube.com/embed/XsE34MdHTqI",
+            "desc":"In this video, we take a look at how to use the ALG ISOs, to fix broken GRUB bootloader. This method works if you have partitioned, according to the recommended way of partitioning. Please have a look of the installation section."
+        }
+        
+    ]
+}
