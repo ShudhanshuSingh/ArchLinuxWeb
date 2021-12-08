@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/ShudhanshuSingh/ArchLinuxWeb/static/css/main.624d98bf.chunk.css",
+    "main.js": "/ShudhanshuSingh/ArchLinuxWeb/static/js/main.233e159d.chunk.js",
+    "main.js.map": "/ShudhanshuSingh/ArchLinuxWeb/static/js/main.233e159d.chunk.js.map",
+    "runtime-main.js": "/ShudhanshuSingh/ArchLinuxWeb/static/js/runtime-main.56802ed9.js",
+    "runtime-main.js.map": "/ShudhanshuSingh/ArchLinuxWeb/static/js/runtime-main.56802ed9.js.map",
+    "static/js/2.7e26c6bb.chunk.js": "/ShudhanshuSingh/ArchLinuxWeb/static/js/2.7e26c6bb.chunk.js",
+    "static/js/2.7e26c6bb.chunk.js.map": "/ShudhanshuSingh/ArchLinuxWeb/static/js/2.7e26c6bb.chunk.js.map",
+    "static/js/3.3124bed2.chunk.js": "/ShudhanshuSingh/ArchLinuxWeb/static/js/3.3124bed2.chunk.js",
+    "static/js/3.3124bed2.chunk.js.map": "/ShudhanshuSingh/ArchLinuxWeb/static/js/3.3124bed2.chunk.js.map",
+    "index.html": "/ShudhanshuSingh/ArchLinuxWeb/index.html",
+    "static/css/main.624d98bf.chunk.css.map": "/ShudhanshuSingh/ArchLinuxWeb/static/css/main.624d98bf.chunk.css.map",
+    "static/js/2.7e26c6bb.chunk.js.LICENSE.txt": "/ShudhanshuSingh/ArchLinuxWeb/static/js/2.7e26c6bb.chunk.js.LICENSE.txt",
+    "static/media/a.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/a.72f46655.png",
+    "static/media/app-menu.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/app-menu.90913cc9.png",
+    "static/media/b.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/b.7dcc56ab.png",
+    "static/media/c.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/c.9b1d2206.png",
+    "static/media/cin-apps.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/cin-apps.dad75788.png",
+    "static/media/cin-fetch-pure.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/cin-fetch-pure.3742ae5b.png",
+    "static/media/d.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/d.a2791fe4.png",
+    "static/media/e.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/e.97ae69f1.png",
+    "static/media/f.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/f.8f9118c9.png",
+    "static/media/g.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/g.fc32204c.png",
+    "static/media/gnome-about.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/gnome-about.54421c3e.png",
+    "static/media/gnome-polkit.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/gnome-polkit.c6a3ac47.png",
+    "static/media/h.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/h.e2bff8ca.png",
+    "static/media/i.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/i.fc2347d8.png",
+    "static/media/installer.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/installer.7aaf947e.png",
+    "static/media/j.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/j.85f220bd.png",
+    "static/media/k.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/k.3ff7e844.png",
+    "static/media/l.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/l.98be8935.png",
+    "static/media/logo.f673c526.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/logo.f673c526.png",
+    "static/media/m.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/m.597e5f13.png",
+    "static/media/plasma-pure.png": "/ShudhanshuSingh/ArchLinuxWeb/static/media/plasma-pure.7dcc56ab.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56802ed9.js",
+    "static/js/2.7e26c6bb.chunk.js",
+    "static/css/main.624d98bf.chunk.css",
+    "static/js/main.233e159d.chunk.js"
+  ]
+}
