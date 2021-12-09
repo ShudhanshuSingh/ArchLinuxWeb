@@ -2,6 +2,7 @@ import React from 'react'
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import logo from "./logo.png";
 import {Link} from 'react-scroll'
+import { Link as Navigate } from "react-router-dom";
 
 
 function Navbar() {
@@ -23,29 +24,31 @@ function Navbar() {
               </li>
               <li class="flex items-center">
                 <Hashicon value={"Tutorials"} size={20}/>
-                <a
-                  href="/tutorials"
+                <Navigate to="/tutorials">
+                <button
+                  
                   aria-label="Our product"
                   title="Our product"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Tutorials
-                </a>
+                </button></Navigate>
               </li>
               <li class="flex items-center">
                   <Hashicon value={"Download"} size={20} class="mx-2"/>
-                <a
-                  href="/download"
+                <Navigate to="/download">
+                <button
+                  
                   aria-label="Product pricing"
                   title="Product pricing"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Download
-                </a>
+                </button></Navigate>
               </li>
             </ul>
+            <Navigate to="/">
             <a
-              href="/"
               aria-label="Company"
               title="Company"
               class="inline-flex items-center"
@@ -54,7 +57,7 @@ function Navbar() {
               <span class="ml-2 text-xl font-bold tracking-wide text-dark-100 uppercase">
                 ArchLinuxGUI
               </span>
-            </a>
+            </a></Navigate>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class="flex items-center ">
               <Hashicon value={"About us"} size={20}/>
@@ -117,8 +120,9 @@ function Navbar() {
                   <div class="p-5 bg-white border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                       <div>
+                        <Navigate to="/">
                         <a
-                          href="/"
+                          
                           aria-label="Company"
                           title="Company"
                           class="inline-flex items-center"
@@ -142,7 +146,7 @@ function Navbar() {
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Arch Linux GUI
                           </span>
-                        </a>
+                        </a></Navigate>
                       </div>
                       <div>
                         <button
@@ -163,14 +167,15 @@ function Navbar() {
                     <nav>
                       <ul class="space-y-4">
                         <li>
-                          <a
-                            href="/tutorials"
+                          <Navigate to="/tutorials">
+                          <button
+                            
                             aria-label="Tutorials"
                             title="Tutorials"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Tutorials
-                          </a>
+                          </button></Navigate>
                         </li>
                         <li>
                           <button
@@ -183,14 +188,15 @@ function Navbar() {
                           </button>
                         </li>
                         <li>
-                          <a
-                            href="/download"
+                          <Navigate to="/download">
+                          <button
+                            
                             aria-label="Download"
                             title="Download"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Download
-                          </a>
+                          </button></Navigate>
                         </li>
                         <li>
                           <button

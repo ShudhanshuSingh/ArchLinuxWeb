@@ -7,7 +7,7 @@ import data from "./download.json";
 import RequirementModal from "../RequirementModal/RequirementModal";
 import IntructionModal from "../IntructionModal/IntructionModal";
 import EditionComponent from "../EditionComponent/EditionComponent";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -18,13 +18,28 @@ function Download() {
   const [allData, setAllData] = React.useState([data.data]);
   const [reqBool, setReqBool] = React.useState(false);
   const [instruction, setIntruction] = React.useState(false);
-  
+  const [visible, setVisible] = React.useState(false);
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const listenScrollEvent = () => {
+    if (window.scrollY != 0) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  };
+  React.useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, []);
   // React.useEffect(()=>{
   //     console.log(select)
   // },[select])
   return (
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex justify-center flex-col">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8 flex justify-center flex-col">
       {reqBool === true || instruction === true ? (
         reqBool === true && instruction === false ? (
           <RequirementModal modal={reqBool} setModal={setReqBool} />
@@ -82,30 +97,30 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
-                      onClick={() =>setSelect("Plasma Editions")}
+                      onClick={() => setSelect("Plasma Editions")}
                     >
                       <Link to="1" spy={true} smooth={true}>
-                      Plasma Editions </Link>
+                        Plasma Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("Gnome Editions")}
                     >
-                      <Link to="3"spy={true} smooth={true}>
-                      Gnome Editions </Link>
+                      <Link to="3" spy={true} smooth={true}>
+                        Gnome Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -114,29 +129,30 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("Xfce Editions")}
                     >
-                      <Link to="5"spy={true} smooth={true}>
-                      Xfce Editions </Link>
+                      <Link to="5" spy={true} smooth={true}>
+                        Xfce Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("Cinnamon Editions")}
-                    ><Link to="7"spy={true} smooth={true}>
-                      Cinnamon Editions </Link>
+                    >
+                      <Link to="7" spy={true} smooth={true}>
+                        Cinnamon Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -145,14 +161,15 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("MATE Editions")}
-                    ><Link to="9"spy={true} smooth={true}>
-                      MATE Editions </Link>
+                    >
+                      <Link to="9" spy={true} smooth={true}>
+                        MATE Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -161,28 +178,30 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("i3 Editions")}
-                    ><Link to="11"spy={true} smooth={true}>
-                      i3 Editions </Link>
+                    >
+                      <Link to="11" spy={true} smooth={true}>
+                        i3 Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("BSPWM Editions")}
-                    ><Link to="12"spy={true} smooth={true}>
-                      BSPWM Editions </Link>
+                    >
+                      <Link to="12" spy={true} smooth={true}>
+                        BSPWM Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -191,14 +210,15 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("Zen Editions")}
-                    ><Link to="13"spy={true} smooth={true}>
-                      Zen Editions </Link>
+                    >
+                      <Link to="13" spy={true} smooth={true}>
+                        Zen Editions{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -207,14 +227,15 @@ function Download() {
                 <Menu.Item>
                   {({ active }) => (
                     <button
-                      
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
                       onClick={() => setSelect("All")}
-                    ><Link to="1"spy={true} smooth={true}>
-                      All </Link>
+                    >
+                      <Link to="1" spy={true} smooth={true}>
+                        All{" "}
+                      </Link>
                     </button>
                   )}
                 </Menu.Item>
@@ -226,18 +247,23 @@ function Download() {
       {allData[0].map((data) => (
         <EditionComponent
           key={data.key}
-          id = {data.key}
+          id={data.key}
           edition={data.edition}
           desc={data.description}
           name={data.name}
           features={data.features}
-          img = {data.img}
+          img={data.img}
           link1={data.download1}
           link2={data.download2}
         />
       ))}
-      <button onClick={()=>{window.scrollTo({ top: 0, behavior: 'smooth' });}} class="animate-bounce z-10 fixed right-0 m-4 bottom-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-          ↑ 
+      <button
+        onClick={scrollTop}
+        className={`${
+          visible === true ? "visible" : "invisible"
+        } animate-bounce z-10 fixed right-1 m-4 bottom-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded`}
+      >
+        ↑
       </button>
     </div>
   );

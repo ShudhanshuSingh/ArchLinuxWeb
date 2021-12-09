@@ -1,6 +1,7 @@
 import React from 'react'
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import logo from "./logo.png";
+import { Link as Navigate } from "react-router-dom";
 
 function SubNav({nameUrl}) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -11,29 +12,32 @@ function SubNav({nameUrl}) {
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class="flex items-center ">
                 <Hashicon value={"Home"} size={20}/>
-                <a
-                  href="/"
+                <Navigate to="/">
+                <button
+                  
                   aria-label="Home"
                   title="Home"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Home
-                </a>
+                </button></Navigate>
               </li>
               <li class="flex items-center">
                 <Hashicon value={nameUrl} size={20}/>
-                <a
-                  href={nameUrl=== "/download"? "/tutorials":"/download"}
+                <Navigate to={nameUrl=== "/download"? "/tutorials":"/download"}>
+                <button
+                  
                   aria-label="Tutorials"
                   title="Tutorials"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   {nameUrl=== "/download"? "Tutorial":"Download"}
-                </a>
+                </button></Navigate>
               </li>
             </ul>
-            <a
-              href="/"
+            <Navigate to="/">
+            <button
+              
               aria-label="Company"
               title="Company"
               class="inline-flex items-center"
@@ -42,7 +46,7 @@ function SubNav({nameUrl}) {
               <span class="ml-2 text-xl font-bold tracking-wide text-dark-100 uppercase">
                 ArchLinuxGUI
               </span>
-            </a>
+            </button></Navigate>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class="flex items-center ">
               <Hashicon value={"Github"} size={20}/>
@@ -94,8 +98,9 @@ function SubNav({nameUrl}) {
                   <div class="p-5 bg-white border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                       <div>
-                        <a
-                          href="/"
+                        <Navigate to="/">
+                        <button
+                          
                           aria-label="Company"
                           title="Company"
                           class="inline-flex items-center"
@@ -104,7 +109,7 @@ function SubNav({nameUrl}) {
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Arch Linux GUI
                           </span>
-                        </a>
+                        </button></Navigate>
                       </div>
                       <div>
                         <button
@@ -125,24 +130,26 @@ function SubNav({nameUrl}) {
                     <nav>
                       <ul class="space-y-4">
                         <li>
-                          <a
+                          <Navigate to ="/">
+                          <button
                             href="/"
                             aria-label="Home"
                             title="Home"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Home
-                          </a>
+                          </button></Navigate>
                         </li>
                         <li>
-                          <a
-                            href={nameUrl=== "/download"? "/tutorials":"/download"}
+                          <Navigate to = {nameUrl=== "/download"? "/tutorials":"/download"}>
+                          <button
+                            
                             aria-label="urlSwitch"
                             title="urlSwitch"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             {nameUrl=== "/download"? "Tutorials":"Download"}
-                          </a>
+                          </button> </Navigate>
                         </li>
                         <li>
                           <a

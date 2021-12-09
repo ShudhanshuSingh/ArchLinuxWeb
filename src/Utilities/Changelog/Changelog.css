@@ -1,0 +1,18 @@
+.update:before {
+    background-color: darkgray;
+    width: 2px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+  }
+  .update {
+  /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
+  position: relative;
+
+  /* Use padding to space things out rather than margins as the line would get broken up otherwise */
+  margin: 0;
+  padding-bottom: 1em;
+  padding-left: 20px;
+}

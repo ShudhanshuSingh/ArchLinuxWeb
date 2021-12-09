@@ -9,6 +9,7 @@ import { Footer } from './Utilities/Footer/Footer';
 import Navbar from './Utilities/Navbar/Navbar';
 import { useLocation } from 'react-router-dom'
 import SubNav from './Utilities/SubNav/SubNav';
+import Changelog from './Utilities/Changelog/Changelog';
 
 
 
@@ -27,7 +28,7 @@ function App() {
   }
   React.useEffect(()=>{  
     loc()
-  },[])
+  },[location])
 
   return (
     <div className="App">
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="/download" element={<Download />} />
         <Route path="/tutorials" element={<Tutorials />} />
+        <Route path="/changelog" element={<Changelog />} />
         <Route path="/" element={<Main />} />
       </Routes>
       <Footer />
