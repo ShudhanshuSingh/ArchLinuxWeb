@@ -3,7 +3,7 @@ import { Hashicon } from "@emeraldpay/hashicon-react";
 
 export const Team = () => {
     return (
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="about px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -42,7 +42,7 @@ export const Team = () => {
             Creative Minds working behind the scenes in order to deliver exceptional service to our users!
           </p>
         </div>
-        <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex">
             <img
               className="object-cover w-20 h-20 mr-4 rounded-full shadow"
@@ -53,6 +53,54 @@ export const Team = () => {
               <p className="text-lg font-bold">Gaurang Vishwakarma</p>
               <p className="text-sm text-gray-800">Product Lead</p>
               <p className="text-sm text-gray-800">Maintains ALG Repo.</p>
+            </div>
+          </div>
+          <div className="flex">
+            <img
+              className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c584598931623.5ee79b6bb5949.jpg"
+              alt="Person"
+            />
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-bold">Lovlesh Dagar</p>
+              <p className="text-sm text-gray-800">Web Lead</p>
+              <p className="text-sm text-gray-800">Maintainance of Website</p>
+            </div>
+          </div>
+          <div className="flex">
+            <img
+              className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c584598931623.5ee79b6bb5949.jpg"
+              alt="Person"
+            />
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-bold">Lovlesh Dagar</p>
+              <p className="text-sm text-gray-800">Web Lead</p>
+              <p className="text-sm text-gray-800">Maintainance of Website</p>
+            </div>
+          </div>
+          <div className="flex">
+            <img
+              className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c584598931623.5ee79b6bb5949.jpg"
+              alt="Person"
+            />
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-bold">Lovlesh Dagar</p>
+              <p className="text-sm text-gray-800">Web Lead</p>
+              <p className="text-sm text-gray-800">Maintainance of Website</p>
+            </div>
+          </div>
+          <div className="flex">
+            <img
+              className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6c584598931623.5ee79b6bb5949.jpg"
+              alt="Person"
+            />
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-bold">Lovlesh Dagar</p>
+              <p className="text-sm text-gray-800">Web Lead</p>
+              <p className="text-sm text-gray-800">Maintainance of Website</p>
             </div>
           </div>
           <div className="flex">

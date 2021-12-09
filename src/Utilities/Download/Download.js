@@ -18,18 +18,13 @@ function Download() {
   const [allData, setAllData] = React.useState([data.data]);
   const [reqBool, setReqBool] = React.useState(false);
   const [instruction, setIntruction] = React.useState(false);
-  // 
-  // React.useEffect(()=>{
-  //   // setAllData(data)
-
-  // },[allData])
   
 
   // React.useEffect(()=>{
   //     console.log(select)
   // },[select])
   return (
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex justify-center flex-col">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex justify-center flex-col">
       {reqBool === true || instruction === true ? (
         reqBool === true && instruction === false ? (
           <RequirementModal modal={reqBool} setModal={setReqBool} />
@@ -241,7 +236,7 @@ function Download() {
           link2={data.download2}
         />
       ))}
-      <button onClick={()=>{window.scrollTo({ top: 0, behavior: 'smooth' });}} class="z-10 fixed right-0 m-4 bottom-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+      <button onClick={()=>{window.scrollTo({ top: 0, behavior: 'smooth' });}} class="animate-bounce z-10 fixed right-0 m-4 bottom-0 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
           ↑ 
       </button>
     </div>

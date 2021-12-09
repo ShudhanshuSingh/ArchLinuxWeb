@@ -27,14 +27,14 @@ function Header() {
             alt=""
         />   */}
         <div className="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md">
-            <iframe className = "w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-screen h-96 lg:max-w-screen-md"
+            <iframe className = "w-full max-w-screen-sm h-64 mx-auto rounded shadow-2xl md:w-screen h-96 lg:max-w-screen-md"
                 // width="800"
                 // height="400"            
                 src="https://www.youtube.com/embed/a1a2pYgV6XU"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowfullscreen 
             ></iframe>
             {/* <img
             // src="https://kitwind.io/assets/kometa/half-browser.png"

@@ -2,9 +2,9 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div class="w-full flex flex-col md:flex-row gap-4 mb-8 md:mb-0 flex-between items-center p-8 mt-5">
-      <div class="flex items-center justify-center px-5 py-5 transform -rotate-12 hover:rotate-0 transition duration-400">
-        <div class="w-full mx-auto max-w-xl rounded-lg bg-indigo-600 dark:bg-gray-800 shadow-lg px-5 pt-5 pb-10 text-gray-800 dark:text-gray-50">
+    <div class="w-full  flex flex-col md:flex-row gap-4 mb-8 md:mb-0 flex-between items-center p-8 mt-5">
+      <div class="flex items-center  justify-center px-5 py-5 transform -rotate-12 hover:rotate-0 transition duration-400">
+        <div class="w-full mx-auto  max-w-xl rounded-lg bg-indigo-600 dark:bg-gray-800 shadow-lg px-5 pt-5 pb-10 text-gray-800 dark:text-gray-50">
           <div class="w-full pt-1 text-center pb-5 -mt-16 mx-auto">
             <a href="#" class="block relative">
               <img

@@ -1,10 +1,8 @@
 import React from 'react'
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import logo from "./logo.png";
-import {Link} from 'react-scroll'
 
-
-function Navbar() {
+function SubNav({nameUrl}) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
       <div class="bg-transparant z-40">
@@ -12,35 +10,25 @@ function Navbar() {
           <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class="flex items-center ">
-                <Hashicon value={"Features"} size={20}/>
-                <button
-                  aria-label="Our product"
-                  title="Our product"
-                  class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
-                ><Link to="features" spy={true} smooth={true}>
-                  Features </Link>
-                </button>
-              </li>
-              <li class="flex items-center">
-                <Hashicon value={"Tutorials"} size={20}/>
+                <Hashicon value={"Home"} size={20}/>
                 <a
-                  href="/tutorials"
-                  aria-label="Our product"
-                  title="Our product"
+                  href="/"
+                  aria-label="Home"
+                  title="Home"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Tutorials
+                  Home
                 </a>
               </li>
               <li class="flex items-center">
-                  <Hashicon value={"Download"} size={20} class="mx-2"/>
+                <Hashicon value={nameUrl} size={20}/>
                 <a
-                  href="/download"
-                  aria-label="Product pricing"
-                  title="Product pricing"
+                  href={nameUrl=== "/download"? "/tutorials":"/download"}
+                  aria-label="Tutorials"
+                  title="Tutorials"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Download
+                  {nameUrl=== "/download"? "Tutorial":"Download"}
                 </a>
               </li>
             </ul>
@@ -57,36 +45,25 @@ function Navbar() {
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li class="flex items-center ">
-              <Hashicon value={"About us"} size={20}/>
-                <button
-                  href="/"
-                  aria-label="About us"
-                  title="About us"
+              <Hashicon value={"Github"} size={20}/>
+                <a
+                  href="https://github.com/arch-linux-gui"
+                  aria-label="Github"
+                  title="Github"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
-                ><Link to="about" spy={true} smooth={true}>
-                  About us </Link>
-                </button>
+                >
+                  Github
+                </a>
               </li>
               <li class="flex items-center ">
               <Hashicon value={"SourceForge"} size={20}/>
                 <a
-                  href="/"
+                  href="https://sourceforge.net/projects/arch-linux-gui/"
                   aria-label="Sign in"
                   title="Sign in"
                   class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   SourceForge
-                </a>
-              </li>
-              <li class="flex items-center ">
-              <Hashicon value={"Code"} size={20}/>
-                <a
-                  href="/"
-                  aria-label="Sign up"
-                  title="Sign up"
-                  class="font-medium tracking-wide text-gray-dark transition-colors duration-200 hover:text-teal-accent-400"
-                >
-                  Code
                 </a>
               </li>
             </ul>
@@ -123,21 +100,6 @@ function Navbar() {
                           title="Company"
                           class="inline-flex items-center"
                         >
-                          {/* <svg
-                            class="w-8 text-deep-purple-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg> */}
                           <img class="h-12" src={logo} />
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Arch Linux GUI
@@ -164,43 +126,33 @@ function Navbar() {
                       <ul class="space-y-4">
                         <li>
                           <a
-                            href="/tutorials"
-                            aria-label="Tutorials"
-                            title="Tutorials"
+                            href="/"
+                            aria-label="Home"
+                            title="Home"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Tutorials
+                            Home
                           </a>
-                        </li>
-                        <li>
-                          <button
-                    
-                            aria-label="Features"
-                            title="Features"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          ><Link to="features" spy={true} smooth={true}>
-                            Features </Link>
-                          </button>
                         </li>
                         <li>
                           <a
-                            href="/download"
-                            aria-label="Download"
-                            title="Download"
+                            href={nameUrl=== "/download"? "/tutorials":"/download"}
+                            aria-label="urlSwitch"
+                            title="urlSwitch"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Download
+                            {nameUrl=== "/download"? "Tutorials":"Download"}
                           </a>
                         </li>
                         <li>
-                          <button
-                
-                            aria-label="About us"
-                            title="About us"
+                          <a
+                            href="https://discord.gg/NgAFEw9Tkf"
+                            aria-label="Discord"
+                            title="Discord"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          ><Link to="about" spy={true} smooth={true}>
-                            About us </Link>
-                          </button>
+                          >
+                            Discord
+                          </a>
                         </li>
                         <li>
                           <a
@@ -234,4 +186,4 @@ function Navbar() {
     );
 }
 
-export default Navbar
+export default SubNav
