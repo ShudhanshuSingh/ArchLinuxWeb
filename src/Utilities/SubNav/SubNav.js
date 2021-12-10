@@ -34,6 +34,18 @@ function SubNav({nameUrl}) {
                   {nameUrl=== "/download"? "Tutorial":"Download"}
                 </button></Navigate>
               </li>
+              <li class="flex items-center">
+                <Hashicon value={"changelog"} size={20}/>
+                <Navigate to={nameUrl=== "/changelog"?"/tutorials":"/changelog"}>
+                <button
+                  
+                  aria-label="Changelog"
+                  title="Changelog"
+                  class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  {nameUrl==="/changelog"?"Tutorial":"Changelog"}
+                </button></Navigate>
+              </li>
             </ul>
             <Navigate to="/">
             <button
@@ -70,8 +82,19 @@ function SubNav({nameUrl}) {
                   SourceForge
                 </a>
               </li>
+              <li class="flex items-center ">
+              <Hashicon value={"Support"} size={20}/>
+                <a
+                  href="https://discord.gg/NgAFEw9Tkf"
+                  aria-label="Support"
+                  title="Support"
+                  class="font-medium tracking-wide text-dark-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Support
+                </a>
+              </li>
             </ul>
-            <div class="lg:hidden">
+            <div class="lg:hidden z-20">
               <button
                 aria-label="Open Menu"
                 title="Open Menu"
@@ -132,7 +155,7 @@ function SubNav({nameUrl}) {
                         <li>
                           <Navigate to ="/">
                           <button
-                            href="/"
+                
                             aria-label="Home"
                             title="Home"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -150,6 +173,17 @@ function SubNav({nameUrl}) {
                           >
                             {nameUrl=== "/download"? "Tutorials":"Download"}
                           </button> </Navigate>
+                        </li>
+                        <li>
+                          <Navigate to ={nameUrl === "/changelog"?"/tutorials":"/changelog"}>
+                          <button
+                            
+                            aria-label="Changelog"
+                            title="Changelog"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            {nameUrl === "/changelog"?"Tutorial":"Changelog"}
+                          </button></Navigate>
                         </li>
                         <li>
                           <a

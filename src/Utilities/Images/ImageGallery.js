@@ -26,39 +26,39 @@ function ImageGallery() {
          Some beautiful snapshots of our OS
         </p>
       </div>
-    <div class="container w-3/4 grid grid-cols-2 mx-auto gap-2 mb-4  md:grid-cols-3  ">
+    <div class="container cursor-pointer  w-3/4 grid grid-cols-2 mx-auto gap-2 mb-4  md:grid-cols-3  ">
         
-      <div class="w-auto rounded">
+      <div class="w-auto rounded transform hover:scale-110">
         <img
           src={appmenu}
           alt="image"
         />
       </div>
-      <div class="w-full rounded">
+      <div class="w-full rounded transform hover:scale-110">
         <img
           src={cinapps}
           alt="image"
         />
       </div>
-      <div class="w-full rounded">
+      <div class="w-full rounded transform hover:scale-110">
         <img
           src={gnomeabout}
           alt="image"
         />
       </div>
-      <div class="w-full rounded ">
+      <div class="w-full rounded transform hover:scale-110 ">
         <img
           src={gnomepolkit}
           alt="image"
         />
       </div>
-      <div class="w-full rounded">
+      <div class="w-full rounded transform hover:scale-110">
         <img
           src={installer}
           alt="image"
         />
       </div>
-      <div class="w-full rounded">
+      <div class="w-full rounded transform hover:scale-110">
         <img
           src={plasmapure}
           alt="image"
