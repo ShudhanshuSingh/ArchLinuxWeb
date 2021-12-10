@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "latest": true,
+      "month": "October'21",
+      "new_additions": ["No new release"],
+      "changes": [
+        "Driver Support for Latest Nvidia GPUs (themed editions only)",
+        "Automatic Generation of BTRFS subvolumes (/, /home, /var/cache, /var/log)",
+        "Live USB has more space now (4GB)",
+        "ROFI Launch key changed to mod+D in WM Editions",
+        "Emoji Support in MATE, GNOME, XFCE, Cinnamon",
+        "South Asian Language Support in all Desktop Environments",
+        "Installer now copies network information from liveCD to target host machine",
+        "Installer supports file system selection in automatic partitioning",
+        "Default Keyboard for India is now English (US)",
+        "Various bug & typo fixes in installer.",
+        "Latest Firefox Web Browser with extension",
+        "Copy to RAM feature removed from themed editions"
+      ]
+    },
+    {
+      "id": 1,
+      "latest": false,
+      "month": "September'21",
+      "new_additions": ["ALG BSPWM Edition"],
+      "changes": [
+        "Copy to RAM feature added to all edition",
+        "Speech feature removed from all editions",
+        "Replace Dmenu with Rofi in i3 WM",
+        "i3 WM now has system wide dark theme",
+        "Bluetooth on all themed edition tested ",
+        "Bluetooth on all themed edition tested",
+        "Installer adjusted for CTR feature"
+      ]
+    },
+    {
+      "id": 2,
+      "latest": false,
+      "month": "August'21",
+      "new_additions": ["ALG MATE Themed Edition", "ALG MATE Pure Edition"],
+      "changes": [
+        "Fixed Pacman 6 for Gnome and Plasma",
+        "Added Neofetch to Cinnamon Edition",
+        "Bluetooth fixed",
+        "Added MATE editions",
+        "Changes to codebase",
+        "Added settings repo",
+        "Fixed root shell issue"
+      ]
+    },
+    {
+      "id": 3,
+      "latest": false,
+      "month": "July'21",
+      "new_additions": ["No new release"],
+      "changes": [
+        "Pacman 6 is somewhat stable now. Most Repo packages are signed properly. Hence Parallel Downloads are enabled.",
+        "Fixed XFCE Theme Edition Wallpaper issue.",
+        "Fixed no sound icon in both XFCE editions.",
+        "Fixed many XFCE key-bindings and added new once. Now they correspond with other DEs.",
+        "Added wifi icon in i3 edition.",
+        "Fixed Gnome Software. Users can now download from there. Appstream fixed. (Gnome themed and pure)",
+        "Added Gnome Software to cinnamon themed edition",
+        "Fixed GRUB OS-PROBER issue, after grub update.",
+        "SHA256SUMS can now be used to verify the integrity of the download.",
+        "Improved installer UI",
+        "Website is now live: https://archlinuxgui.in",
+        "Users can now download from OSDN."
+      ]
+    },
+    {
+      "id": 4,
+      "latest": false,
+      "month": "June'21",
+      "new_additions": [
+        "ALG XFCE Themed Edition",
+        "ALG XFCE Pure Edition",
+        "ALG Cinnamon Themed Edition",
+        "ALG Cinnamon Pure Edition",
+        "ALG i3WM Edition"
+      ],
+      "changes": [
+        "Removed Chaotic AUR repository and replaced it with PARU AUR helper on all themed editions.",
+        "Added base-devel and pacman-contrib on all themed editions.",
+        "Installer now cleansup unwanted packages post install. These packages will never be used by the user.",
+        "Cinnamon edition now ships with Cinnamon version 5.",
+        "All editions now ship with pacman 6. Parallel downloads is disabled by default but can be enabled by the user if bandwidth permits.",
+        "Themed Editions have aliases to ease pacman operations.",
+        "Themed Editions now ship the latest edition of firefox web browser."
+      ]
+    },
+    {
+      "id": 5,
+      "latest": false,
+      "month": "May'21",
+      "new_additions": ["ALG Gnome Themed Edition", "ALG Gnome Pure Edition"],
+      "changes": ["Added Chaotic AUR repository.", "Removed Yay AUR helper."]
+    },
+    {
+      "id": 6,
+      "latest": false,
+      "month": "September'21",
+      "new_additions": ["No new release"],
+      "changes": ["Added Yay AUR Helper."]
+    }
+  ]
+}
