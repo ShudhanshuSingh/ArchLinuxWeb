@@ -1,8 +1,9 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { PaperClipIcon } from '@heroicons/react/solid'
-
-export default function EditionComponent({id,edition,desc,name,features,img,link1,link2}) {
-  return (
+import React from 'react'
+import { PaperClipIcon,ClipboardCopyIcon } from '@heroicons/react/solid'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+export default function EditionComponent({id,edition,desc,name,features,img,dob,isoName,sha256sum,link1,link2}) {
+  const [copy,setCopy] = React.useState(false)
+  return ( 
     <div id={id} className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-lg leading-6 font-medium text-gray-900">{edition}</h3>
@@ -22,14 +23,31 @@ export default function EditionComponent({id,edition,desc,name,features,img,link
             <dt className="text-sm font-medium text-gray-500">Features</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{features.map((feature)=><li>{feature}</li>)}</dd>
           </div>
-          {/* <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">Salary expectation</dt>
-            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">$120,000</dd>
-          </div> */}
           <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
             <dt className="text-sm font-medium text-gray-500">About</dt>
             <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
               {desc}
+            </dd>
+          </div>
+          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">DOB (DD/MM/YY)</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+              {dob}
+            </dd>
+          </div>
+          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">ISO Name</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+              {isoName}
+            </dd>
+          </div>
+          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">sha256sum</dt>
+            <dd className="mt-1 cursor-pointer text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+              <CopyToClipboard text={sha256sum}
+                  onCopy={() => setCopy(true)}>
+                  <span className="flex">{sha256sum} {copy===false?<ClipboardCopyIcon className="flex-shrink-0 ml-2 h-5 w-5 text-blue-500" />:<p className="ml-3 text-green-500">Copied</p>}</span> 
+              </CopyToClipboard>
             </dd>
           </div>
           <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

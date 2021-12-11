@@ -15,7 +15,7 @@ function Stats() {
           </span>{" "}
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-         Updated as of 6th December,2021
+         Updated as of 11th December,2021
         </p>
       </div>
       <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
@@ -32,7 +32,7 @@ function Stats() {
           </p>
         </div>
         <div class="text-center md:border-r">
-          <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">58.5K</h6>
+          <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">61.1K</h6>
           <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
             Downloads
           </p>

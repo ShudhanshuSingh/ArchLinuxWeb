@@ -4,16 +4,9 @@ import { Dialog, Transition } from "@headlessui/react";
 import { BadgeCheckIcon } from "@heroicons/react/outline";
 import data from "../Changelog/ChangelogData.json"
 function ChangelogModal() {
-    const [logData,setLogData] = useState(data.data);
+    const [logData,setLogData] = useState(data.data.filter(function(item){
+      return item.latest == true; }));
     const [open, setOpen] = useState(true);
-    const [newData,setNewData] = useState()
-
-  React.useEffect(()=>{
-    setNewData(logData.filter(function(item){
-        return item.latest == true; }))
-    
-  },[])
-  console.log(newData[0].changes)
   const cancelButtonRef = useRef(null);
 
   const fun = (e)=>{

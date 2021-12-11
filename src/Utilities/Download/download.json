@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "key":1,
+      "key": 1,
       "edition": "PLASMA Editions",
       "name": "KDE Plasma Theme Edition (Flagship)",
       "description": "The Plasma Themed Edition (also known as the Flagship) of Arch Linux GUI helps you install Vanilla Arch Linux with the KDE Plasma Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
@@ -15,97 +15,115 @@
         "Simple Desktop Display Manager",
         "paru, AUR helper"
       ],
-      "img":"a",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-plasma-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-plasma-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-plasma-2021.10-b-x86_64.iso",
+      "sha256sum": "1270db69d41ef088269841e85148194fc7c0555b02728f5afa7b91d2ece2b24c",
+      "dob": "10/10/21",
+      "img": "a",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-plasma-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-plasma-2021.10-b-x86_64.iso/"
     },
     {
-      "key":2,
-        "edition": "PLASMA Editions",
-        "name": "Plasma Pure Edition",
-        "description": "The Plasma Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock Plasma Desktop Environment. It contains all the software in the plasma group by default. This is what users get after installing the Plasma Desktop Environment after a CLI installation.",
-        "features": [
-          "Kate: Text Editor",
-          "Konsole: Terminal",
-          "Dolphin: File Manager",
-          "Spectacle: Screenshot Tool"
-        ],
-        "img":"b",
-        "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-plasma-pure-2021.10-b-x86_64.iso/download",
-        "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-plasma-pure-2021.10-b-x86_64.iso/"
+      "key": 2,
+      "edition": "PLASMA Editions",
+      "name": "Plasma Pure Edition",
+      "description": "The Plasma Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock Plasma Desktop Environment. It contains all the software in the plasma group by default. This is what users get after installing the Plasma Desktop Environment after a CLI installation.",
+      "features": [
+        "Kate: Text Editor",
+        "Konsole: Terminal",
+        "Dolphin: File Manager",
+        "Spectacle: Screenshot Tool"
+      ],
+      "isoName": "archlinux-gui-plasma-pure-2021.10-b-x86_64.iso",
+      "sha256sum": "22df7aeaf02e6de9be6d44153267f88bedcf12d66dddeac032d508751f7a54b4",
+      "dob": "10/10/21",
+      "img": "b",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-plasma-pure-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-plasma-pure-2021.10-b-x86_64.iso/"
     },
     {
-      "key":3,
-        "edition": "GNOME Editions",
-        "name": "GNOME Edition",
-        "description": "The GNOME Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the GNOME Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
-        "features": [
-            "NVIDIA GPU Support",
-            "Beautiful System Wide Orchis Dark Theme, including Web Browser",
-            "Office Suite with MS fonts",
-            "Printing Services (CUPS)",
-            "Bluetooth with gnome-bluetooth",
-            "Media Player",
-            "Customized Gnome Display Manager",
-            "Gnome-tweak tool",
-            "paru, AUR helper"
-        ],
-        "img":"c",
-        "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-gnome-2021.10-b-x86_64.iso/download",
-        "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-gnome-2021.10-b-x86_64.iso/"
+      "key": 3,
+      "edition": "GNOME Editions",
+      "name": "GNOME Edition",
+      "description": "The GNOME Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the GNOME Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
+      "features": [
+        "NVIDIA GPU Support",
+        "Beautiful System Wide Orchis Dark Theme, including Web Browser",
+        "Office Suite with MS fonts",
+        "Printing Services (CUPS)",
+        "Bluetooth with gnome-bluetooth",
+        "Media Player",
+        "Customized Gnome Display Manager",
+        "Gnome-tweak tool",
+        "paru, AUR helper"
+      ],
+      "isoName": "archlinux-gui-gnome-2021.10-b-x86_64.iso",
+      "sha256sum": "f2e599414a62f49e53888b18d0362bef7a82c09196173f5185bbedc814cf2aa8",
+      "dob": "10/10/21",
+      "img": "c",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-gnome-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-gnome-2021.10-b-x86_64.iso/"
     },
     {
-      "key":4,
-        "edition": "GNOME Editions",
-        "name": "GNOME Pure Edition",
-        "description": "The GNOME Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock GNOME Desktop Environment. It contains some of the the software from GNOME group. To check what packages come pre-installed, click here. This is what users get after installing the GNOME Desktop Environment After a CLI installation. The packages provided in this edition are fewer than that in the above linked gnome group. However, this edition gives you a completely working gnome-desktop.",
-        "features": [
-            "Gedit: Text Editor",
-            "Gnome-Terminal",
-            "Nautilus: File Manager"
-        ],
-        "img":"d",
-        "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-gnome-pure-2021.10-b-x86_64.iso/download",
-        "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-gnome-pure-2021.10-b-x86_64.iso/"
+      "key": 4,
+      "edition": "GNOME Editions",
+      "name": "GNOME Pure Edition",
+      "description": "The GNOME Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock GNOME Desktop Environment. It contains some of the the software from GNOME group. To check what packages come pre-installed, click here. This is what users get after installing the GNOME Desktop Environment After a CLI installation. The packages provided in this edition are fewer than that in the above linked gnome group. However, this edition gives you a completely working gnome-desktop.",
+      "features": [
+        "Gedit: Text Editor",
+        "Gnome-Terminal",
+        "Nautilus: File Manager"
+      ],
+      "isoName": "archlinux-gui-gnome-pure-2021.10-b-x86_64.iso",
+      "sha256sum": "630b5edcd317ff9c7970e8730b2754f281cd205b4c9ba921c99a9c71cc758b79",
+      "dob": "10/10/21",
+      "img": "d",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-gnome-pure-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-gnome-pure-2021.10-b-x86_64.iso/"
     },
     {
-      "key":5,
-        "edition": "XFCE Editions",
-        "name": "XFCE Editions",
-        "description": "The XFCE Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the XFCE Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
-        "features": [
-            "NVIDIA GPU Support",
-            "Whisker Menu",
-            "System Wide Dark Theme, including Web Browser",
-            "Media Player",
-            "Printing Services (CUPS)",
-            "Bluetooth with Blueman",
-            "Office Suite with MS fonts",
-            "Pavucontrol",
-            "Open Thunar as root",
-            "Customized LightDM, with gtk-greeter",
-            "paru, AUR helper"
-        ],
-        "img":"e",
-        "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-xfce-2021.10-b-x86_64.iso/download",
-        "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-xfce-2021.10-b-x86_64.iso/"
+      "key": 5,
+      "edition": "XFCE Editions",
+      "name": "XFCE Editions",
+      "description": "The XFCE Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the XFCE Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
+      "features": [
+        "NVIDIA GPU Support",
+        "Whisker Menu",
+        "System Wide Dark Theme, including Web Browser",
+        "Media Player",
+        "Printing Services (CUPS)",
+        "Bluetooth with Blueman",
+        "Office Suite with MS fonts",
+        "Pavucontrol",
+        "Open Thunar as root",
+        "Customized LightDM, with gtk-greeter",
+        "paru, AUR helper"
+      ],
+      "isoName": "archlinux-gui-xfce-2021.10-b-x86_64.iso",
+      "sha256sum": "8cd772cdec57cf0f4d2f132aa13465d8b8d8be9ec896a6fb66711143b76ab7b0",
+      "dob": "10/10/21",
+      "img": "e",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-xfce-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-xfce-2021.10-b-x86_64.iso/"
     },
     {
-      "key":6,
+      "key": 6,
       "edition": "XFCE Editions",
       "name": "XFCE Pure",
       "description": "The XFCE Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock XFCE Desktop Environment. It contains all the software in the XFCE group. This is what users get after installing the XFCE Desktop Environment After a CLI installation. Addtionally xfce4-pulseaudio-plugin & pulseaudio-alsa help with audio. Pavucontrol is not installed, so you need to install it manually. LightDM comes with stock lightdm-gtk-greeter.",
       "features": [
-          "Mousepad: Text Editor",
-          "xfce4-terminal",
-          "Thunar: File Manager (Thunar doesn't open as root in this edition.)"
+        "Mousepad: Text Editor",
+        "xfce4-terminal",
+        "Thunar: File Manager (Thunar doesn't open as root in this edition.)"
       ],
-      "img":"f",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-xfce-pure-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-xfce-pure-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-xfce-pure-2021.10-b-x86_64.iso",
+      "sha256sum": "1c420cd2a7e044f54c0cf5c1e962804eff19ef9b0af29e64931e5cc63514e5cc",
+      "dob": "10/10/21",
+      "img": "f",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-xfce-pure-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-xfce-pure-2021.10-b-x86_64.iso/"
     },
     {
-      "key":7,
+      "key": 7,
       "edition": "CINNAMON Editions",
       "name": "Cinnamon Themed Edition",
       "description": "The Cinnamon Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Cinnamon Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly.",
@@ -119,12 +137,15 @@
         "Customized LightDM, with gtk-greeter",
         "paru, AUR helper"
       ],
-      "img":"g",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-cinnamon-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-cinnamon-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-cinnamon-2021.10-b-x86_64.iso",
+      "sha256sum": "43f9c883d10daba46022862c95b27aec17c1194f5b40eee6e3a8602c82f8c3ca",
+      "dob": "10/10/21",
+      "img": "g",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-cinnamon-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-cinnamon-2021.10-b-x86_64.iso/"
     },
     {
-      "key":8,
+      "key": 8,
       "edition": "CINNAMON Editions",
       "name": "Cinnamon Pure Edition",
       "description": "The Cinnamon Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock Cinnamon Desktop Environment. This is what users get after installing the Cinnamon Desktop Environment after a CLI installation.",
@@ -132,12 +153,15 @@
         "cinnamon package",
         "Various other GNOME packages, such as gnome-terminal & gedit"
       ],
-      "img":"h",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-cinnamon-pure-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-cinnamon-pure-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-cinnamon-pure-2021.10-b-x86_64.iso",
+      "sha256sum": "e818cf1b45b767baabae2b452e3ad00c4c28c3045b523bc6976e5c951854ee6c",
+      "dob": "10/10/21",
+      "img": "h",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-cinnamon-pure-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-cinnamon-pure-2021.10-b-x86_64.iso/"
     },
     {
-      "key":9,
+      "key": 9,
       "edition": "MATE Editions",
       "name": "MATE Themed Edition",
       "description": "The MATE Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the MATE Desktop Environment. It is pre-configured and ready to use. It comes with all the neccessary software and settings to help users get started quickly, with MATE.",
@@ -153,26 +177,28 @@
         "Mate-tweak tool",
         "Brisk Menu"
       ],
-      "img":"i",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-mate-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-mate-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-mate-2021.10-b-x86_64.iso",
+      "sha256sum": "bbf535b4fac086a8c8076d9f177bf09c9b11830b247b9b6062267e24924a77f9",
+      "dob": "10/10/21",
+      "img": "i",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-mate-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-mate-2021.10-b-x86_64.iso/"
     },
     {
-      "key":10,
+      "key": 10,
       "edition": "MATE Editions",
       "name": "MATE Pure Edition",
       "description": "The Pure Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Stock MATE Desktop Environment. This edition contains all the packages in MATE & MATE-EXTRA groups. This is what users get after installing the MATE Desktop Environment after a CLI installation.",
-      "features": [
-        "Pluma: Text Editor",
-        "mate-terminal",
-        "Caja: File Manager"        
-      ],
-      "img":"j",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-mate-pure-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-mate-pure-2021.10-b-x86_64.iso/"
+      "features": ["Pluma: Text Editor", "mate-terminal", "Caja: File Manager"],
+      "isoName": "archlinux-gui-mate-pure-2021.10-b-x86_64.iso",
+      "sha256sum": "e2b476dee9cfd4f6dbc9a4065af5724ca6dbf707ca64d6c8aa45f035eb908937",
+      "dob": "10/10/21",
+      "img": "j",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-mate-pure-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-mate-pure-2021.10-b-x86_64.iso/"
     },
     {
-      "key":11,
+      "key": 11,
       "edition": "i3 Editions",
       "name": "i3 Edition",
       "description": "The i3 Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the i3 Window Manager. To install this edition, you need to launch the install from rofi. Launch rofi with mod+d, where mod is your windows key. Then you need to simply search for Install Arch Linux or Arch Linux installer. Once rofi displays the program, launch it by pressing enter. Due to the minimalist nature of this edition, there are very little programs installed in it, and you can easily spot the install after launch rofi. You can also use your arrow keys to navigate to it, and then press enter.",
@@ -185,14 +211,17 @@
         "Polybar - Status Bar",
         "Feh - that handles the background.",
         "Paru - An AUR Helper",
-        "Betterlockscreen"       
+        "Betterlockscreen"
       ],
-      "img":"k",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-i3-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-i3-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-i3-2021.10-b-x86_64.iso",
+      "sha256sum": "1b894b3352aff37f4144d2781751892052af9306094e4410c131e298706bbcb3",
+      "dob": "10/10/21",
+      "img": "k",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-i3-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-i3-2021.10-b-x86_64.iso/"
     },
     {
-      "key":12,
+      "key": 12,
       "edition": "BSPWM Editions",
       "name": "BSPWM Edition",
       "description": "The bswpm Edition of Arch Linux GUI helps you install Vanilla Arch Linux with the Bitmap Space Partitioning Window Manager. To install this edition, you need to launch the install from rofi. Launch rofi with mod+d, where mod is your windows key. Then you need to simply search for Install Arch Linux or Arch Linux installer. Once rofi displays the program, launch it by pressing enter. Due to the minimalist nature of this edition, there are very little programs installed in it, and you can easily spot the install after launch rofi. You can also use your arrow keys to navigate to it, and then press enter.",
@@ -204,13 +233,17 @@
         "Polybar - Status Bar",
         "Feh - that handles the background.",
         "Paru - An AUR Helper",
-        "Betterlockscreen"       
+        "Betterlockscreen"
       ],
-      "img":"l",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-bspwm-2021.10-b-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-bspwm-2021.10-b-x86_64.iso/"
+      "isoName": "archlinux-gui-bspwm-2021.10-b-x86_64.iso",
+      "sha256sum": "2da3aa14069b27bb4a19248d77c1ed843dbd3f26494ee70b3b75c929ec816701",
+      "dob": "10/10/21",
+      "img": "l",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/archlinux-gui-bspwm-2021.10-b-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76114/archlinux-gui-bspwm-2021.10-b-x86_64.iso/"
     },
-    {"key":13,
+    {
+      "key": 13,
       "edition": "ZEN Editions",
       "name": "Zen Edition (Plasma's 25th Anniversary Release)",
       "description": "This release is to celebrate one of the longest developed desktops, KDE's Plasma Desktop, which turned 25. The Live CD include the 25th anniversary release.This edition differs to Vanilla Arch Linux, due to the inclusion of the following components",
@@ -220,12 +253,14 @@
         "Zsh as default shell",
         "Z standard compression for ISO image",
         "Chaotic AUR Repository",
-        "Pamac Software Center"       
+        "Pamac Software Center"
       ],
-      "img":"m",
-      "download1":"https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions/archlinux-gui-zen-2021.10-x86_64.iso/download",
-      "download2":"https://osdn.net/projects/arch-linux-gui/downloads/76206/archlinux-gui-zen-2021.10-x86_64.iso/"
-    }                
+      "isoName": "-",
+      "sha256sum": "-",
+      "dob": "10/10/21",
+      "img": "m",
+      "download1": "https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions/archlinux-gui-zen-2021.10-x86_64.iso/download",
+      "download2": "https://osdn.net/projects/arch-linux-gui/downloads/76206/archlinux-gui-zen-2021.10-x86_64.iso/"
+    }
   ]
 }
- 

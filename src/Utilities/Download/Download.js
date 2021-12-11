@@ -253,6 +253,9 @@ function Download() {
           name={data.name}
           features={data.features}
           img={data.img}
+          dob = {data.dob}
+          isoName = {data.isoName}
+          sha256sum = {data.sha256sum}
           link1={data.download1}
           link2={data.download2}
         />
