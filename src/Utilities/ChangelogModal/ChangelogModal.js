@@ -1,14 +1,22 @@
-import { Fragment, useRef, useState } from "react";
+
+import React, { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationIcon } from "@heroicons/react/outline";
+import { BadgeCheckIcon } from "@heroicons/react/outline";
+import data from "../Changelog/ChangelogData.json"
+function ChangelogModal() {
+    const [logData,setLogData] = useState(data.data);
+    const [open, setOpen] = useState(true);
+    const [newData,setNewData] = useState()
 
-function RequirementModal({modal,setModal}) {
-  const [open, setOpen] = useState(modal);
-
+  React.useEffect(()=>{
+    setNewData(logData.filter(function(item){
+        return item.latest == true; }))
+    
+  },[])
+  console.log(newData[0].changes)
   const cancelButtonRef = useRef(null);
 
   const fun = (e)=>{
-    setModal(false)
     setOpen(false)
   }
   return (
@@ -32,7 +40,6 @@ function RequirementModal({modal,setModal}) {
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          {/* This element is to trick the browser into centering the modal contents. */}
           <span
             className="hidden sm:inline-block sm:align-middle sm:h-screen"
             aria-hidden="true"
@@ -51,9 +58,9 @@ function RequirementModal({modal,setModal}) {
             <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <ExclamationIcon
-                      className="h-6 w-6 text-red-600"
+                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                    <BadgeCheckIcon
+                      className="h-6 w-6 text-green-600"
                       aria-hidden="true"
                     />
                   </div>
@@ -62,48 +69,33 @@ function RequirementModal({modal,setModal}) {
                       as="h3"
                       className="text-lg leading-6 font-medium text-gray-900"
                     >
-                      Requirements
+                      {logData[0].month} : What's New?
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="text-md leading-4 font-medium text-gray-700 mt-4 mb-2 bg-yellow-200 p-2"> Mininum:- </p>
+                      <p className="text-md leading-4 font-medium text-gray-700 mt-4 mb-2 bg-blue-200 p-2"> Editions:- </p>
                       <p className="text-sm text-gray-500">
                         <ol class="list-disc pl-2">
-                          <li class="list-decimal">
-                            64 bit x86_64 processor (Intel/AMD), with atleast 2
-                            CPU cores. (32-bit not supported)
-                          </li>
-                          <li class="list-decimal">
-                            Any GPU/iGPU with OpenGl 3.3+ support.
-                          </li>
-                          <li class="list-decimal">
-                            Atleast 2GB DDR3/DDR4 RAM.
-                          </li>
-                          <li class="list-decimal">
-                            Atleast 10GB HDD/SSD storage. (Although installer
-                            will allow min 5.5GB)
-                          </li>
-                          <li class="list-decimal">
-                            Basic WPA/WPA2 compatible wifi card or ethernet
-                            supported motherboard.
-                          </li>
+                            {
+                                logData[0].new_additions.map((k)=>(
+                                    <li class="list-disc">
+                                        {k}
+                                    </li>
+                                ))
+                            }
+                          
+                          
                         </ol>
-                        <p className="text-md leading-4 font-medium text-gray-700 mt-4 mb-2 bg-green-200 p-2"> Recommeded (Themed Edition):- </p>
+                        <p className="text-md leading-4 font-medium text-gray-700 mt-4 mb-2 bg-green-200 p-2"> Changes:- </p>
                         <ol class="list-disc pl-2">
-                          <li class="list-decimal">
-                            64 bit x86_64 processor (Intel/AMD), with atleast 4
-                            CPU cores. (32-bit not supported)
-                          </li>
-                          <li class="list-decimal">
-                            Any GPU/iGPU with OpenGl 3.3+ support.
-                          </li>
-                          <li class="list-decimal">
-                            4-8GB DDR4 RAM (more the better).
-                          </li>
-                          <li class="list-decimal">
-                            50GB HDD/SSD Space (more the better) (practically
-                            you would use a 500GB/1TB HDD/SSD)
-                          </li>
-                          <li class="list-decimal">WIFI and Ethernet Card.</li>
+                        {
+                                logData[0].changes.map((k)=>(
+                                    <li class="list-decimal">
+                                        {k}
+                                    </li>
+                                ))
+                            }
+                
+                          
                         </ol>
                       </p>
                     </div>
@@ -113,10 +105,10 @@ function RequirementModal({modal,setModal}) {
               <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button
                   type="button"
-                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
                   onClick={fun}
                 >
-                  Understood
+                  Excited ❤
                 </button>
                 <button
                   type="button"
@@ -135,4 +127,4 @@ function RequirementModal({modal,setModal}) {
   );
 }
 
-export default RequirementModal;
+export default ChangelogModal;

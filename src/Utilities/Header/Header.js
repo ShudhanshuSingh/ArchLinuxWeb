@@ -45,9 +45,9 @@ function Header() {
             className="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md"
             alt=""
         />   */}
-      <div className="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md">
+      <div className="w-full  max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md">
         <iframe
-          className="w-full max-w-screen-sm h-64 mx-auto rounded shadow-2xl md:w-screen h-96 lg:max-w-screen-md"
+          className="w-full max-w-screen-sm  mx-auto rounded shadow-2xl md:w-screen h-96 lg:max-w-screen-md "
           // width="800"
           // height="400"
           src="https://www.youtube.com/embed/a1a2pYgV6XU"

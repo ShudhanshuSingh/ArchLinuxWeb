@@ -10,6 +10,7 @@ import Navbar from './Utilities/Navbar/Navbar';
 import { useLocation } from 'react-router-dom'
 import SubNav from './Utilities/SubNav/SubNav';
 import Changelog from './Utilities/Changelog/Changelog';
+import ChangelogModal from './Utilities/ChangelogModal/ChangelogModal';
 
 
 
@@ -39,7 +40,7 @@ function App() {
           <SubNav nameUrl={currentLocation} /> 
         )
       }
-    
+      <ChangelogModal />
       <Routes>
         <Route path="/download" element={<Download />} />
         <Route path="/tutorials" element={<Tutorials />} />

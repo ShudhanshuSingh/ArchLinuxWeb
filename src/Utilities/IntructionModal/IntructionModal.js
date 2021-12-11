@@ -66,10 +66,10 @@ function IntructionModal({ modal, setModal }) {
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
-                        <ol class="list-disc">
+                        <ol class="list-disc pl-2">
                           <li class="list-decimal">
                             Make Bootable USB :
-                            <ol class="list-disc ml-6">
+                            <ol class="list-disc ml-6 ">
                               <li>
                                 Linux: Watch this <a href="https://www.youtube.com/watch?v=KQGedNCA1E4" class="text-blue-500">video</a> for Command Line DD
                                 method or watch the video with Balena Etcher.
